@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+body {
+    display: block;
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    color: #fff;
+    overflow-y: auto;
+    min-height: 100vh;
+    padding-bottom: 50px; 
+}
+
+
+.animation-container {
+    text-align: center;
+    position: relative;
+    margin: 50px 0;
+}
+
+
+.grading-system {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0;
+    margin: 0 0 50px;
+    animation: dropDown 1.5s ease forwards;
+}
+
+
+.student-registration {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f39c12; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    opacity: 0;
+    margin: 50px 0;
+    animation: riseUp 1.5s ease 1.5s forwards;
+}
+
+
+.bigdiv {
+    visibility: hidden;
+    opacity: 0;
+    margin: 50px auto;
+    background-color: #fff;
+    color: #333;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease 3s forwards;
+}
+
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #f39c12; 
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f39c12; 
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+.login{  background: 
+        url('./image/bac.png') center center fixed;
+background-size: 100%, 100%, cover; }
+
+#login-div{
+    text-align: right;
+    position: relative;
+    margin: 50px 100px;
+}
+
+
+
+@keyframes dropDown {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes riseUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
